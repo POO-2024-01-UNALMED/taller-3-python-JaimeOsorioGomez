@@ -8,6 +8,10 @@ class Control:
         
         return self._tv
     
+    def setTv (self, tv):
+        
+        self._tv = tv
+    
     def turnOn(self):
         
         self._tv.turnOn()
