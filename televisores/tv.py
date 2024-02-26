@@ -25,7 +25,9 @@ class TV:
     
     def setCanal (self, canal):
         
-        self._canal = canal
+        if ((self._estado and canal <= 120) and (canal >= 1)):
+        
+            self._canal = canal
         
     def getCanal (self):
         
@@ -58,13 +60,14 @@ class TV:
         return self._control
     
     @classmethod
-    def setNumTV(self, numTV):
-        TV.numTV = numTV
+    def setNumTV(cls):
+
+        TV.numTV = cls
         
     @classmethod
-    def getNumTV (self):
+    def getNumTV (cls):
         
-        return TV.numTV
+        return cls.numTV
     
     def turnOn (self):
         

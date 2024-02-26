@@ -8,6 +8,6 @@ class Marca :
         
         return self._nombre
     
-    def setnombre(self, nombre):
+    def setNombre(self, nombre):
         
         self._nombre = nombre
