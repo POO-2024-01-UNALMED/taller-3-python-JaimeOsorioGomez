@@ -62,12 +62,12 @@ class TV:
     @classmethod
     def setNumTV(cls, numTV):
 
-        cls.numTV = numTV
+        cls._numTV = numTV
         
     @classmethod
     def getNumTV (cls):
         
-        return cls.numTV
+        return cls._numTV
     
     def turnOn (self):
         
@@ -105,7 +105,7 @@ class TV:
             
             self._volumen -= 1
             
- 
+
     
     
     
