@@ -13,7 +13,7 @@ class TV:
         self._marca = marca
         self._control = Control
         
-        TV.numTV +=1
+        TV._numTV +=1
         
     def setMarca (self, marca):
         
