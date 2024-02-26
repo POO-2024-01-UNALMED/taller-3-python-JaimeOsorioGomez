@@ -2,7 +2,7 @@ from televisores.control import Control
 
 class TV:
     
-    numTV = 0
+    _numTV = 0
     
     def __init__(self, marca, estado):
         
@@ -60,9 +60,9 @@ class TV:
         return self._control
     
     @classmethod
-    def setNumTV(cls, num):
+    def setNumTV(cls, numTV):
 
-        cls._numTV = num
+        cls._numTV = numTV
         
     @classmethod
     def getNumTV (cls):
